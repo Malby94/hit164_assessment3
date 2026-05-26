@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Stitch - Shopping Cart</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      color: #111;
+      background: #fff;
+    }
+
+    .logo {
+      padding: 12px 20px;
+      font-size: 14px;
+      color: #333;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav {
+      padding: 8px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      color: #0000EE;
+      text-decoration: underline;
+      margin-right: 10px;
+      font-size: 14px;
+    }
+
+    nav a:visited { color: #551A8B; }
+    nav a:hover { color: #EE0000; }
+
+    main {
+      padding: 20px;
+      max-width: 900px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    table th {
+      text-align: left;
+      border-bottom: 2px solid #aaa;
+      padding: 8px 6px;
+      font-weight: bold;
+    }
+
+    table td {
+      padding: 8px 6px;
+      border-bottom: 1px solid #ddd;
+      vertical-align: middle;
+    }
+
+    input[type="number"] {
+      width: 50px;
+      padding: 4px;
+      font-size: 14px;
+      border: 1px solid #aaa;
+    }
+
+    .remove-btn {
+      color: #0000EE;
+      text-decoration: underline;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .remove-btn:hover { color: #EE0000; }
+
+    .cart-summary {
+      text-align: right;
+      font-size: 15px;
+      margin-bottom: 16px;
+    }
+
+    .cart-summary p {
+      margin-bottom: 6px;
+    }
+
+    .cart-summary .total {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .checkout-btn {
+      display: block;
+      margin-left: auto;
+      padding: 8px 24px;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fff;
+      border: 1px solid #aaa;
+      cursor: pointer;
+    }
+
+    .checkout-btn:hover { background: #eee; }
+
+    .empty-msg {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<div class="logo"><img src="logo.jpeg" alt="Urban Stitch Logo" height="50"></div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="cart.html">Shopping Cart</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="product.html">Product Details</a>
+  </nav>
+
+  <main>
+    <h1>Shopping Cart</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Size</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Urban Classic Tee</td>
+          <td>M</td>
+          <td>$35.00</td>
+          <td><input type="number" value="1" min="1"></td>
+          <td>$35.00</td>
+          <td><button class="remove-btn">Remove</button></td>
+        </tr>
+        <tr>
+          <td>Street Logo Shirt</td>
+          <td>L</td>
+          <td>$40.00</td>
+          <td><input type="number" value="1" min="1"></td>
+          <td>$40.00</td>
+          <td><button class="remove-btn">Remove</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="cart-summary">
+      <p>Subtotal: $75.00</p>
+      <p>Shipping: $8.00</p>
+      <p class="total">Total: $83.00</p>
+    </div>
+
+    <a href="checkout.html"><button class="checkout-btn">Proceed to Checkout</button></a>
+    
+  </main>
+
+</body>
+</html>
