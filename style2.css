@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main page styling */
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+/* Logo styling */
+.logo{
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.logo img{
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+/* Navigation bar */
+nav{
+    margin-bottom: 40px;
+}
+
+/* Navigation list */
+nav ul{
+    list-style: none;
+}
+
+/* Navigation items */
+nav ul li{
+    margin-bottom: 10px;
+}
+
+/* Navigation links */
+nav ul li a{
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Heading styling */
+h1, h2{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+h3{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: left;
+
+}
+
+/* Paragraph styling */
+p{
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 20px;
+}
