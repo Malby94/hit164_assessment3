@@ -11,19 +11,20 @@
 #text {
     font-size: 20px;
     text-align: left;
-    margin-top: 10%;
-
+    margin-top: 20%; 
+/* Increasing the space between text and nav bar so it doesnt overlap with the border */
 }
 nav{
     position: fixed;
     top: 0;
     left: 0;
-
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
 }
 nav ul{
@@ -43,11 +44,11 @@ nav ul a{
 }
 nav > a{
     font-size: 40px;
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 section{
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10%;
 }
 .products {
@@ -67,4 +68,17 @@ section{
 .item img {
     width: 300px;
     height: auto;
+}
+
+.front-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    height: auto;
+}
+#text2 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 1%;
 }
